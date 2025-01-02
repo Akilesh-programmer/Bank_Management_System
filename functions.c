@@ -1,7 +1,13 @@
+// Including the required header files
 #include "user_structure.h"
 #include <stdlib.h>
 #include <stdio.h>
 
+/*
+    This is a function to add user to the users array, the function will
+    return the pointer to the user structure if the user is added successfully,
+    otherwise it will return NULL.
+*/
 struct user *add_user(int iaccountNumber) {
     struct user *newUser = (struct user *)malloc(sizeof(struct user));
     newUser->iaccountNumber = iaccountNumber;
@@ -37,6 +43,11 @@ struct user *add_user(int iaccountNumber) {
     return newUser;
 }
 
+/*
+    This is a function to search user in the users array, the function will
+    return the pointer to the user structure if the user is found successfully,
+    otherwise it will return NULL.
+*/
 struct user *search_user(struct user *users[], int iuserCount, int iaccountNumber) {
     for(int i=0; i<iuserCount; i++) {
         if(users[i]!=NULL && users[i]->iaccountNumber == iaccountNumber) {
@@ -46,6 +57,12 @@ struct user *search_user(struct user *users[], int iuserCount, int iaccountNumbe
     return NULL;
 }
 
+
+/*
+    This is a function to display user data, the function will
+    display the user data if the user is found successfully,
+    otherwise it will display "User not found".
+*/
 void display_user_data(struct user *user) {
     if(user == NULL) {
         printf("\n\n");
@@ -70,6 +87,11 @@ void display_user_data(struct user *user) {
     }
 }
 
+
+/*
+    This is a function to free the memory allocated to the users array, the function will
+    free the memory allocated to the users array.
+*/
 void free_users(struct user *users[], int iuserCount) {
     for(int i=0; i<iuserCount; i++) {
         if(users[i] != NULL) {
@@ -78,6 +100,11 @@ void free_users(struct user *users[], int iuserCount) {
     }
 }
 
+
+/*
+    This is a function to get the user choice, the function will
+    return the user choice.
+*/
 int get_user_choice() {
     int iuserChoice;
     printf("\n\n");
@@ -95,6 +122,11 @@ int get_user_choice() {
     return iuserChoice;
 }
 
+
+/*
+    This is a function to delete user from the users array, the function will
+    delete the user from the users array,
+*/
 int delete_user(struct user *users[], int iuserCount, int iaccountNumber) {
     for(int i=0; i<iuserCount; i++) {
         if(users[i]!=NULL && users[i]->iaccountNumber == iaccountNumber) {
@@ -106,6 +138,11 @@ int delete_user(struct user *users[], int iuserCount, int iaccountNumber) {
     return 0;
 }
 
+
+/*
+    This is a function to get the account number, the function will
+    return the account number.
+*/
 int get_account_number() {
     int iaccountNumber;
     printf("Enter account number: ");
@@ -113,6 +150,12 @@ int get_account_number() {
     return iaccountNumber;
 }
 
+
+/*
+    This is a function to check balance of the user, the function will
+    return the balance of the user if the user is found successfully,
+    otherwise it will return -1.
+*/
 double check_balance(struct user *users[], int iuserCount, int iaccountNumber) {
     for(int i=0; i<iuserCount; i++) {
         if(users[i]!=NULL && users[i]->iaccountNumber == iaccountNumber) {
@@ -122,6 +165,14 @@ double check_balance(struct user *users[], int iuserCount, int iaccountNumber) {
     return -1;
 }
 
+
+/*
+    This is a function to withdraw amount from the user, the function will
+    return the balance of the user if the user is found successfully and
+    the amount is withdrawn successfully, otherwise it will return -1 if
+    the user is found but the amount is insufficient and it will return -2
+    if the user is not found.
+*/
 double withdraw(struct user *users[], int iuserCount, int iaccountNumber, double amount) {
     for(int i=0; i<iuserCount; i++) {
         if(users[i]!=NULL && users[i]->iaccountNumber == iaccountNumber) {
@@ -136,6 +187,13 @@ double withdraw(struct user *users[], int iuserCount, int iaccountNumber, double
     return -2;
 }
 
+
+/*
+    This is a function to deposit amount to the user, the function will
+    return the balance of the user if the user is found successfully and
+    the amount is deposited successfully, otherwise it will return -1 if
+    the user is not found.
+*/
 double deposit(struct user *users[], int iuserCount, int iaccountNumber, double amount) {
     for(int i=0; i<iuserCount; i++) {
         if(users[i]!=NULL && users[i]->iaccountNumber == iaccountNumber) {

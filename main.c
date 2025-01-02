@@ -1,3 +1,4 @@
+// Including the required header files
 #include <stdio.h>
 #include "constants.h"
 #include "user_structure.h"
@@ -5,9 +6,14 @@
 
 int main() {
 
+	// Array of pointers to the user structures
 	struct user *users[MAX_USERS] = {NULL};
 	int iuserCount = 0;
 
+	/*
+		Getting user choice continuously until the user chooses to exit.
+		Until then based on the user choice, the respective function will be called.
+	*/
 	int iuserChoice = TRUE;
 	while(iuserChoice) {
 		iuserChoice = get_user_choice();
@@ -127,6 +133,7 @@ int main() {
 	printf("Thank you for using the application\n");
 	printf("***********************************\n");
 
+	// Free the memory allocated to the users
 	free_users(users, iuserCount);
 
 	return 0;
