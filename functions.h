@@ -7,3 +7,4 @@ int delete_user(struct user *users[], int iuserCount, int iaccountNumber);
 int get_account_number();
 double check_balance(struct user *users[], int iuserCount, int iaccountNumber);
 double withdraw(struct user *users[], int iuserCount, int iaccountNumber, double amount);
+double deposit(struct user *users[], int iuserCount, int iaccountNumber, double amount);

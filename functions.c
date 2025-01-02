@@ -135,3 +135,13 @@ double withdraw(struct user *users[], int iuserCount, int iaccountNumber, double
     }
     return -2;
 }
+
+double deposit(struct user *users[], int iuserCount, int iaccountNumber, double amount) {
+    for(int i=0; i<iuserCount; i++) {
+        if(users[i]!=NULL && users[i]->iaccountNumber == iaccountNumber) {
+            users[i]->dbalance += amount;
+            return users[i]->dbalance;
+        }
+    }
+    return -1;
+}

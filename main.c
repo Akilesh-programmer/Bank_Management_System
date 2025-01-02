@@ -55,7 +55,8 @@ int main() {
 				if(iwithdrawResult != -1 && iwithdrawResult != -2) {
 					printf("\n\n");
 					printf("*****************\n");
-					printf("Amount withdrawn: %lf\n", iwithdrawResult);
+					printf("Withdrawn amount: %lf\n", iamount);
+					printf("Amount Remaining: %lf\n", iwithdrawResult);
 					printf("*****************\n");
 					printf("\n\n");
 				} else if(iwithdrawResult == -2) {
@@ -74,11 +75,11 @@ int main() {
 				break;
 			case 5:
 				int iaccountNumberToCheckBalance = get_account_number();
-				double iBalance = check_balance(users, iuserCount, iaccountNumberToCheckBalance);
-				if(iBalance != -1) {
+				double dBalance = check_balance(users, iuserCount, iaccountNumberToCheckBalance);
+				if(dBalance != -1) {
 					printf("\n\n");
 					printf("*****************\n");
-					printf("Balance: %lf\n", iBalance);
+					printf("Balance: %lf\n", dBalance);
 					printf("*****************\n");
 					printf("\n\n");
 				} else {
@@ -90,6 +91,24 @@ int main() {
 				}
 				break;
 			case 6:
+				int iaccountNumberToDeposit = get_account_number();
+				double ddepositAmount = 0;
+				printf("Enter amount to deposit: ");
+				scanf("%lf", &ddepositAmount);
+				double ddepositResult = deposit(users, iuserCount, iaccountNumberToDeposit, ddepositAmount);
+				if(ddepositResult != -1) {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("Amount deposited: %lf\n", ddepositResult);
+					printf("*****************\n");
+					printf("\n\n");
+				} else {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("User not found\n");
+					printf("*****************\n");
+					printf("\n\n");
+				}
 				break;
 			case 7:
 				iuserChoice = FALSE;
