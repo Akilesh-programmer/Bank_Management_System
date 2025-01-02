@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1735825293 source:/home/akilesh/college/C_Projects/Bank_Management_System/main.c
+	<stdio.h>
+	"constants.h"
+	"user_structure.h"
+	"functions.h"
+
+1735826159 /home/akilesh/college/C_Projects/Bank_Management_System/constants.h
+
+1735825477 /home/akilesh/college/C_Projects/Bank_Management_System/user_structure.h
+	"constants.h"
+
+1735824801 /home/akilesh/college/C_Projects/Bank_Management_System/functions.h
+
+1735825836 source:/home/akilesh/college/C_Projects/Bank_Management_System/functions.c
+	"user_structure.h"
+	<stdlib.h>
+	<stdio.h>
+
