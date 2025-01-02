@@ -3,3 +3,5 @@
 #define PHONE_NUMBER_SIZE 11
 #define EMAIL_ID_SIZE 100
 #define MAX_USERS 1000
+#define TRUE 1
+#define FALSE 0

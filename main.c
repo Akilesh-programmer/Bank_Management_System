@@ -8,8 +8,8 @@ int main() {
 	struct user *users[MAX_USERS] = {NULL};
 	int iuserCount = 0;
 
-	int iuserChoice;
-	do {
+	int iuserChoice = TRUE;
+	while(iuserChoice) {
 		iuserChoice = get_user_choice();
 
 		switch(iuserChoice) {
@@ -47,12 +47,52 @@ int main() {
 				}
 				break;
 			case 4:
+				int iaccountNumberToWithdraw = get_account_number();
+				double iamount = 0;
+				printf("Enter amount to withdraw: ");
+				scanf("%lf", &iamount);
+				double iwithdrawResult = withdraw(users, iuserCount, iaccountNumberToWithdraw, iamount);
+				if(iwithdrawResult != -1 && iwithdrawResult != -2) {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("Amount withdrawn: %lf\n", iwithdrawResult);
+					printf("*****************\n");
+					printf("\n\n");
+				} else if(iwithdrawResult == -2) {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("User not found\n");
+					printf("*****************\n");
+					printf("\n\n");
+				} else {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("Insufficient balance\n");
+					printf("*****************\n");
+					printf("\n\n");
+				}
 				break;
 			case 5:
+				int iaccountNumberToCheckBalance = get_account_number();
+				double iBalance = check_balance(users, iuserCount, iaccountNumberToCheckBalance);
+				if(iBalance != -1) {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("Balance: %lf\n", iBalance);
+					printf("*****************\n");
+					printf("\n\n");
+				} else {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("User not found\n");
+					printf("*****************\n");
+					printf("\n\n");
+				}
 				break;
 			case 6:
 				break;
 			case 7:
+				iuserChoice = FALSE;
 				break;
 			default:
 				printf("\n\n");
@@ -61,7 +101,7 @@ int main() {
 				printf("**************\n");
 				printf("\n\n");
 		}
-	} while(iuserChoice != 7);
+	}
 
 	printf("\n\n");
 	printf("***********************************\n");

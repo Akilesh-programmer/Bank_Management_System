@@ -112,3 +112,26 @@ int get_account_number() {
     scanf("%d", &iaccountNumber);
     return iaccountNumber;
 }
+
+double check_balance(struct user *users[], int iuserCount, int iaccountNumber) {
+    for(int i=0; i<iuserCount; i++) {
+        if(users[i]!=NULL && users[i]->iaccountNumber == iaccountNumber) {
+            return users[i]->dbalance;
+        }
+    }
+    return -1;
+}
+
+double withdraw(struct user *users[], int iuserCount, int iaccountNumber, double amount) {
+    for(int i=0; i<iuserCount; i++) {
+        if(users[i]!=NULL && users[i]->iaccountNumber == iaccountNumber) {
+            if(users[i]->dbalance >= amount) {
+                users[i]->dbalance -= amount;
+                return users[i]->dbalance;
+            } else {
+                return -1;
+            }
+        }
+    }
+    return -2;
+}

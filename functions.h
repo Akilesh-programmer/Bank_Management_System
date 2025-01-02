@@ -5,3 +5,5 @@ void free_users(struct user *users[], int iuserCount);
 int get_user_choice();
 int delete_user(struct user *users[], int iuserCount, int iaccountNumber);
 int get_account_number();
+double check_balance(struct user *users[], int iuserCount, int iaccountNumber);
+double withdraw(struct user *users[], int iuserCount, int iaccountNumber, double amount);
