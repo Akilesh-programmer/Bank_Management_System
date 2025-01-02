@@ -3,9 +3,6 @@
 #include "user_structure.h"
 #include "functions.h"
 
-int get_user_choice();
-void free_users(struct user *users[], int iuserCount);
-
 int main() {
 
 	struct user *users[MAX_USERS] = {NULL};
@@ -22,15 +19,32 @@ int main() {
 					iuserCount++;
 				} else {
 					printf("\n\n");
-					printf("*****************\n");
 					printf("User not added\n");
 					printf("*****************\n");
 					printf("\n\n");
 				}
 				break;
 			case 2:
+				int iaccountNumberToSearch = get_account_number();
+				struct user *searchedUser = search_user(users, iuserCount, iaccountNumberToSearch);
+				display_user_data(searchedUser);
 				break;
 			case 3:
+				int iaccountNumberToDelete = get_account_number();
+				int iresult = delete_user(users, iuserCount, iaccountNumberToDelete);
+				if(iresult == 1) {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("User deleted\n");
+					printf("*****************\n");
+					printf("\n\n");
+				} else {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("User not deleted\n");
+					printf("*****************\n");
+					printf("\n\n");
+				}
 				break;
 			case 4:
 				break;
@@ -55,26 +69,6 @@ int main() {
 	printf("***********************************\n");
 
 	free_users(users, iuserCount);
-	
+
 	return 0;
-}
-
-int get_user_choice() {
-	int ichoice;
-	printf("1. Add user\n");
-	printf("2. Search user\n");
-	printf("3. Delete user\n");
-	printf("4. Check balance\n");
-	printf("5. Deposit\n");
-	printf("6. Withdraw\n");
-	printf("7. Exit\n");
-	printf("Enter your choice: ");
-	scanf("%d", &ichoice);
-	return ichoice;
-}
-
-void free_users(struct user *users[], int iuserCount) {
-	for(int i=0; i<iuserCount; i++) {
-		free(users[i]);
-	}
 }
