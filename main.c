@@ -20,6 +20,14 @@ int main() {
 
 		switch(iuserChoice) {
 			case 1:
+				if(iuserCount == MAX_USERS) {
+					printf("\n\n");
+					printf("*****************\n");
+					printf("Maximum users reached\n");
+					printf("*****************\n");
+					printf("\n\n");
+					break;
+				}
 				users[iuserCount] = add_user(iuserCount);
 				if(users[iuserCount] != NULL) {
 					iuserCount++;
