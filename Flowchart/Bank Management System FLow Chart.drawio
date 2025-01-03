@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.2">
+  <diagram name="Page-1" id="CWjfH2-TphjITWqSUzd5">
+    <mxGraphModel dx="3407" dy="1144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="140" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-2" value="Get user choice" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-5" value="if choice is check baalance" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="440" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-9" value="if choice is search user" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="440" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-10" value="if choice is withdraw" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="440" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-11" value="if choice is exit" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="440" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-12" value="if choice is deposit" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="440" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-13" value="if choice is delete user" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="440" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-14" value="if choice is add user" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="440" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-15" value="Get first name, last name, phone number, email" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-632.5" y="620" width="175" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-16" value="Get age" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-605" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-17" value="if age &amp;lt; 18" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-585" y="900" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-18" value="Display &quot;User must be 18 years or older&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-750" y="1010" width="165" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-19" value="Create account number" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-505" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-20" value="Display the user&#39;s account number" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-505" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-21" value="Connector" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-750" y="1140" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-22" value="Create the user structure dynamically for the entered details" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-505" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-23" value="Get account number" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-305" y="620" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-24" value="if account number found" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="780" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-25" value="Display the details of the found user" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="910" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-26" value="Display &quot;User not found&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-27" value="Connector" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="1060" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-28" value="Get account number" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="22.5" y="620" width="105" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-29" value="if user found" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="770" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-30" value="delete the user, free the memory" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-31" value="Display &quot;User not found&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-32" value="Connector" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1070" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-33" value="Get account number, amount" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="317.5" y="620" width="145" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-34" value="if user found" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="770" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-35" value="if balance is enough" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="434" y="900" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-36" value="Display &quot;User not found&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-37" value="Display &quot;Not enough balance&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1010" width="137.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-38" value="Reduce the balance" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-39" value="Display new balance" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="462.5" y="1120" width="97.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-40" value="Connector" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1220" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-41" value="Get account number" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="630" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-42" value="if user found" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="760" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-43" value="Display the balance" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="870" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-44" value="Display &quot;User not found&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="875" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-45" value="Connector" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="990" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-46" value="Get account number, money" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="972.5" y="610" width="105" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-47" value="if user found" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="992.5" y="750" width="65" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-48" value="Add the balance" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-49" value="Display &quot;User not found&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="937.5" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-50" value="Display &quot;Success&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-51" value="Connector" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-52" value="Connector" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tWN-eLVCdU0-iKNi5xqO-53" value="Connector" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
