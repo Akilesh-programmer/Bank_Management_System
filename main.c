@@ -15,6 +15,19 @@ int main() {
 		Until then based on the user choice, the respective function will be called.
 	*/
 	int iuserChoice = TRUE;
+	int iaccountNumberToSearch;
+	int iaccountNumberToDelete;
+	int iresult;
+	int iaccountNumberToWithdraw;
+	double iamount;
+	double iwithdrawResult;
+	int iaccountNumberToCheckBalance;
+	double dBalance;
+	int iaccountNumberToDeposit;
+	double ddepositAmount;
+
+
+
 	while(iuserChoice) {
 		iuserChoice = get_user_choice();
 
@@ -39,13 +52,13 @@ int main() {
 				}
 				break;
 			case 2:
-				int iaccountNumberToSearch = get_account_number();
+				iaccountNumberToSearch = get_account_number();
 				struct user *searchedUser = search_user(users, iuserCount, iaccountNumberToSearch);
 				display_user_data(searchedUser);
 				break;
 			case 3:
-				int iaccountNumberToDelete = get_account_number();
-				int iresult = delete_user(users, iuserCount, iaccountNumberToDelete);
+				iaccountNumberToDelete = get_account_number();
+				iresult = delete_user(users, iuserCount, iaccountNumberToDelete);
 				if(iresult == 1) {
 					printf("\n\n");
 					printf("*****************\n");
@@ -61,11 +74,11 @@ int main() {
 				}
 				break;
 			case 4:
-				int iaccountNumberToWithdraw = get_account_number();
-				double iamount = 0;
+				iaccountNumberToWithdraw = get_account_number();
+				iamount = 0;
 				printf("Enter amount to withdraw: ");
 				scanf("%lf", &iamount);
-				double iwithdrawResult = withdraw(users, iuserCount, iaccountNumberToWithdraw, iamount);
+				iwithdrawResult = withdraw(users, iuserCount, iaccountNumberToWithdraw, iamount);
 				if(iwithdrawResult != -1 && iwithdrawResult != -2) {
 					printf("\n\n");
 					printf("*****************\n");
@@ -88,8 +101,8 @@ int main() {
 				}
 				break;
 			case 5:
-				int iaccountNumberToCheckBalance = get_account_number();
-				double dBalance = check_balance(users, iuserCount, iaccountNumberToCheckBalance);
+				iaccountNumberToCheckBalance = get_account_number();
+				dBalance = check_balance(users, iuserCount, iaccountNumberToCheckBalance);
 				if(dBalance != -1) {
 					printf("\n\n");
 					printf("*****************\n");
@@ -105,8 +118,8 @@ int main() {
 				}
 				break;
 			case 6:
-				int iaccountNumberToDeposit = get_account_number();
-				double ddepositAmount = 0;
+				iaccountNumberToDeposit = get_account_number();
+				ddepositAmount = 0;
 				printf("Enter amount to deposit: ");
 				scanf("%lf", &ddepositAmount);
 				double ddepositResult = deposit(users, iuserCount, iaccountNumberToDeposit, ddepositAmount);
