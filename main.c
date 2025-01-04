@@ -10,10 +10,7 @@ int main() {
 	struct user *users[MAX_USERS] = {NULL};
 	int iuserCount = 0;
 
-	/*
-		Getting user choice continuously until the user chooses to exit.
-		Until then based on the user choice, the respective function will be called.
-	*/
+
 	int iuserChoice = TRUE;
 	int iaccountNumberToSearch;
 	int iaccountNumberToDelete;
@@ -27,7 +24,10 @@ int main() {
 	double ddepositAmount;
 
 
-
+	/*
+		Getting user choice continuously until the user chooses to exit.
+		Until then based on the user choice, the respective function will be called.
+	*/
 	while(iuserChoice) {
 		iuserChoice = get_user_choice();
 
